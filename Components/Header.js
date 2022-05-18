@@ -1,9 +1,11 @@
 import React from "react";
-import axios from "axios";
 import Image from "next/image"
 class Header extends React.Component {
 
+
+
     render() {
+        const srcImg = this.props.userImg
         return (
             <>
                 <div className="nav-bar">
@@ -14,8 +16,7 @@ class Header extends React.Component {
                             </div>
                             <div className="right">
                                 <h4>{this.props.userName}</h4>
-                                <img src={this.props.userImg} />
-                                {/* <img src={`${this.state.userImg}`} placeholder={`${this.state.userImg}`} layout="responsive" width={50} height={50} /> */}
+                                {srcImg ? <Image src={srcImg} alt=".." width={50} height={50} /> : null}
                             </div>
                         </div>
                     </div>
@@ -26,16 +27,3 @@ class Header extends React.Component {
 }
 
 export default Header;
-
-
-// export async function getStaticProps() {
-//     const req = await fetch("https://assessment.api.vweb.app/user");
-//     const data = await req.json();
-
-//     return {
-//         props: {
-//             dataUser: data,
-//         },
-//     };
-// }
-
