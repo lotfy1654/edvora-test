@@ -1,16 +1,269 @@
-html,
 body {
-  padding: 0;
+  background-color: #292929 !important;
+}
+
+.nav-bar {
+  background: #101010;
+}
+
+.nav-bar .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 15px 0;
+}
+
+.nav-bar .box .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .box .right h4 {
+  padding-right: 20px;
+}
+
+.nav-bar .box .right img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.tabs-container .tab-box .tab-bar {
+  background-color: #292929;
+  padding: 5px 0 10px 0;
+}
+
+.tabs-container .tab-box .tab-bar .box-raw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 567px) {
+  .tabs-container .tab-box .tab-bar .box-raw {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.tabs-container .tab-box .tab-bar .all-tabs button {
+  text-transform: capitalize !important;
+}
+
+@media (max-width: 567px) {
+  .tabs-container .tab-box .tab-bar .all-tabs button {
+    padding: 10px !important;
+  }
+}
+
+.tabs-container .tab-box .tab-bar .fliter-box {
+  padding-right: 20px;
+}
+
+.tabs-container .tab-box .tab-bar .fliter-box .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.tabs-container .tab-box .tab-bar .fliter-box .box span {
+  font-size: 26px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.tabs-container .tab-box .tab-bar .fliter-box .box h3 {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.tabs-container .tab-box .tab-bar .fliter-box .select-box {
+  position: fixed;
+  right: -400px;
+  background: #131313;
+  border-radius: 5px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 10;
 }
 
-* {
-  box-sizing: border-box;
+.tabs-container .tab-box .tab-bar .fliter-box .select-box .title h5 {
+  color: #a5a5a5;
+  border-bottom: 1px solid #CBCBCB;
+  text-transform: capitalize;
+  padding: 0 0 5px 0;
 }
+
+.tabs-container .tab-box .tab-bar .fliter-box .select-box select {
+  margin: 5px 0;
+  background: #232323;
+  color: #fff;
+  border: none;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.tabs-container .tab-box .tab-bar .fliter-box .select-box select:focus-visible {
+  outline: none;
+}
+
+@media (max-width: 567px) {
+  .tabs-container .tab-box .tab-bar .fliter-box {
+    padding: 15px 0 0;
+  }
+}
+
+.show {
+  right: 10px !important;
+}
+
+.PrivateTabIndicator-colorSecondary-4 {
+  background-color: #fff !important;
+}
+
+.MuiTypography-body1 {
+  padding: 0 !important;
+  background: #292929 !important;
+}
+
+.upcomaing {
+  background-color: #292929;
+}
+
+.grid-items .data-item-box {
+  background: #171717;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.grid-items .data-item-box .img-box {
+  width: 200px;
+}
+
+.grid-items .data-item-box .img-box img {
+  border-radius: 10px;
+}
+
+.grid-items .data-item-box .info-box {
+  width: 250px;
+}
+
+.grid-items .data-item-box .info-box p {
+  margin: 8px 0;
+  text-transform: capitalize;
+}
+
+.grid-items .data-item-box .info-box p .key {
+  color: #CFCFCF;
+}
+
+.grid-items .data-item-box .info-box p .val {
+  color: #fff;
+}
+
+.grid-items .data-item-box .right-box {
+  width: 370px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top: 10px;
+}
+
+.grid-items .data-item-box .right-box span {
+  background-color: rgba(0, 0, 0, 0.56);
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+@media (max-width: 567px) {
+  .grid-items .data-item-box .info-box {
+    padding-left: 10px;
+  }
+  .grid-items .data-item-box .info-box p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .grid-items {
+    grid-gap: 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(296px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(296px, 1fr));
+  }
+  .grid-items .data-item-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 0;
+  }
+  .grid-items .data-item-box .info-box {
+    padding-left: 30px;
+    margin: 10px;
+  }
+  .grid-items .data-item-box .right-box {
+    width: 100%;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 0;
+    margin: 10px 0;
+  }
+}
+
+.no-found h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #fff;
+}
+/*# sourceMappingURL=globals.css.map */
