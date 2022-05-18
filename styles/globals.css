@@ -39,6 +39,10 @@ body {
   width: 50px;
 }
 
+.tabs-container .tab-box {
+  background-color: #292929 !important;
+}
+
 .tabs-container .tab-box .tab-bar {
   background-color: #292929;
   padding: 5px 0 10px 0;
