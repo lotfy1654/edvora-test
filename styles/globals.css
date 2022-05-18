@@ -163,7 +163,7 @@ body {
 }
 
 .jss1 {
-  background-color: none;
+  background-color: none !important;
 }
 
 .upcomaing {
