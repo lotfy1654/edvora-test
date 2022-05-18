@@ -10,7 +10,7 @@ import { AiOutlineClose } from "react-icons/ai"
 import Upcoming from './Upcoming';
 import axios from 'axios';
 import Nearset from './Nearset';
-import Past from './past';
+import Past from './Past';
 
 function TabContainer(props) {
     return (
